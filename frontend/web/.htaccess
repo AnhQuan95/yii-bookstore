@@ -1,0 +1,9 @@
+ <ifModule mod_rewrite.c>
+ # Turn on the engine:
+ 	RewriteEngine On
+ # Do not perform redirects for files and directories that exist:
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+# For everything else, redirect to index.php:
+	RewriteRule . index.php
+</ifModule>

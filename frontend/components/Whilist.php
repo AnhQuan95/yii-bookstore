@@ -1,0 +1,1 @@
+   <!-- <?= $form->field($model, 'customer_id')->textInput(['placeholder'=>'C','value'=>Yii::$app->user->identity->id])->label(false) ?> -->
